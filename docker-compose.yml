@@ -1,0 +1,16 @@
+name: print-it
+services:
+    print-back:
+        ports:
+            - 5000:5000
+        container_name: con-back
+        image: print-back
+        secrets:
+          - username
+          - password
+
+secrets:
+  username:
+    external: true
+  password:
+    external: true
