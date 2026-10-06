@@ -2,8 +2,8 @@ import winrm
 import json
 
 REMOTECOMPUTER = 'localhost'
-USERNAME = 'palermo'
-PASSWORD = 'Ww123456'
+USERNAME = ''
+PASSWORD = ''
 
 def RunRemoteScript(script):
     try:
